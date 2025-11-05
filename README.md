@@ -1,88 +1,105 @@
 # 📊 Desafío: Análisis de Eficiencia de Tiendas Alura Store
 
 ![Estado del Proyecto](https://img.shields.io/badge/Estado-Finalizado-success)
-![Clave Tecnologías](https://img.shields.io/badge/Tecnologías-Python%20%7C%20Pandas%20%7C%20Matplotlib%20%7C%20Folium-blue)
+![Tecnologías](https://img.shields.io/badge/Tecnologías-Python%20%7C%20Pandas%20%7C%20Folium-blue)
+
+---
 
 ## 🎯 1. Objetivo del Proyecto
 
-El Sr. Juan, dueño de la cadena Alura Store, necesaria **identificar la tienda menos eficiente** para venderla y utilizar el capital en un nuevo empleo.
+El Sr. Juan, dueño de la cadena **Alura Store**, necesita **identificar la tienda menos eficiente** para venderla y reinvertir el capital en un nuevo emprendimiento.
 
-Este proyecto realiza un análisis de datos en profundidad cruzando las métricas de:
+Este proyecto realiza un **análisis de datos integral**, cruzando métricas de rendimiento económico, reputación, estructura de la demanda y eficiencia logística, con el objetivo de determinar qué tienda presenta **menor potencial de mejora** y **mayor riesgo operativo**.
 
-1.  **Ingresos** (Rendimiento económico).
-2.  **Calificaciones de Clientes** (Satisfacción y riesgo de reputación).
-3.  **Costo de Medio Ambiente** (Eficiencia logística).
-4.  **Perfiles de Venta** (Análisis estructural de la demanda).
+**Indicadores evaluados:**
+1. **Ingresos totales** → Rendimiento económico.  
+2. **Calificaciones de clientes** → Satisfacción y riesgo reputacional.  
+3. **Coste promedio de envío** → Eficiencia logística.  
+4. **Estructura de ventas y demanda** → Análisis de rotación y productos clave.
 
-**Resultado:** Identificación y recomendación estratégica sobre la tienda con el menor potencial de mejor eficiencia.
+**Resultado esperado:**  
+Una recomendación basada en datos sobre **qué tienda debería venderse** para maximizar el retorno global del negocio.
 
------
+---
 
 ## 🛠️ 2. Estructura y Tecnologías
 
-Este proyecto está alojado y se diseñó para ejecutar en el entorno de Google Colab, garantizando la portabilidad y el uso de las últimas libres.
+El proyecto se desarrolló en **Google Colab**, garantizando portabilidad, replicabilidad y compatibilidad con entornos educativos o empresariales.
 
 ### 2.1. Tecnologías Utilizadas
 
 | Librería | Propósito |
-| :--- | :--- |
-| **`Pandas`** | Carga, limpieza, transformación y agregación de datos CSV. |
-| **`Matplotlib`** | Creación de gráficos para visualizar la eficiencia. |
-| **`Folium`** | Visualización interactiva de datos geográficos (mapas de calor) para un *extra* de análisis. |
+|:----------|:-----------|
+| **`Pandas`** | Limpieza, manipulación y análisis de datos CSV. |
+| **`Folium`** | Mapas interactivos para análisis geográfico (uso complementario). |
 
 ### 2.2. Archivos Clave
 
-  * `Desafio_Alura_Store.ipynb`: El **director del patio** de Google Colab que contiene todo el código de carga, análisis, visualizaciones y el informe final.
-  * `tienda_1.csv` a `tienda_4.csv`: Los datos de ventas de las cuatro sucursales.
+- `Desafio_Alura_Store.ipynb`: Notebook principal con análisis, visualizaciones e informe.  
+- `tienda_1.csv` a `tienda_4.csv`: Datasets de ventas de cada sucursal.  
+- `README.md`: Documento de presentación y síntesis ejecutiva del proyecto.  
 
-### 2.3. Visualizaciones Clave
+---
 
-Para obtener una visión $360^{\circ}$ de la eficiencia, se generó un conjunto completo de visualizaciones:
+## 📈 3. Visualizaciones Clave
 
-  * **Gráfico de Dispersión:** Satisfacción del cliente vs. Facturación Total. **(Gráfico decisivo)**.
-  * **Gráfico de Barras:** Facturación total de las 4 tiendas (identificando T4 como la menor y T1 como la mayor).
-  * **Gráfico de Barras Horizontales:** Calificación promedio por tienda (Satisfacción) y Costo de Medio Promedio por tienda (Logística).
-  * **Circular Gráfico (Tabla de Pie):** Ventas por categoría para cada tienda (porcentaje de cada categoría).
-  * **Gráfico Circular o de Barras:** Representación de los 5 productos más vendidos y los 10 menos vendidos de cada tienda.
-  * **4 Gráficos de Mapa de Calor (Folium):** Distribución geográfica de los compradores de cada tienda.
+| Nº | Gráfico | Título | Métrica Clave |
+|:--:|:--|:--|:--|
+| **1** | Rendimiento Económico | **La Tienda 4 tiene el Menor Ingreso Total** | Ingresos Totales |
+| **2** | Reputación del Cliente | **La Tienda 1 muestra la Menor Satisfacción del Cliente (3.98)** | Calificación Promedio (Riesgo Reputacional) |
+| **3** | Estructura de la Demanda | **La demanda de Categorías es distinta entre tiendas** | Demanda por Categoría |
+| **4** | Inventario y Rotación | **Productos con mayor y menor demanda por tienda** | Productos Top/Flop (Demanda Detallada) |
+| **5** | Logística | **La Tienda 1 tiene el Costo de Envío Más Alto** | Costo Promedio de Envío (Ineficiencia Logística) |
 
------
+Cada visualización busca ofrecer una lectura clara e inmediata del desempeño general y específico de cada tienda, facilitando la toma de decisiones estratégicas.
 
-## ⚙️ 3. Ejecución y Dependencias
+---
 
-¡Este proyecto está listo para corregir\! Dado que fue desarrollado en Google Colab, la instalación es casi nula.
+## ⚙️ 4. Ejecución y Dependencias
 
-### 3.1. Cómo Ejecutar el Proyecto
+### 4.1. Ejecución en Google Colab
+1. Abre `Desafio_Alura_Store.ipynb` en **Google Colab**.  
+2. Carga los archivos CSV (`tienda_1.csv` a `tienda_4.csv`) en el mismo directorio o en tu Google Drive.  
+3. Ejecuta todas las celdas en orden: *Entorno de ejecución → Ejecutar todas*.
 
-1. Abre el archivo `AluraStore_JEGD.ipynb` direccionalmente en **Google Colab**.
-2. Segurate de que los archivos `. . . . . . . . . . . . . . . csv` estén cargados en la misma **carpeta** o que la ruta de acceso al **Unidad de Google** mar correcta.
-3. Ejecuta todas las celdas en orden (Menú: *Entorno de ejecución* \> *Ejecutar todas*).
-
-### 3.2. Dependencias
-
-Todas las dependencias necesarias (`pandas`, `matplotlib`, `folium`, etc.) se instala automáticamente en Google Colab. Si lo ejecutas localmente (por ejemplo, en VS Code), usa el siguiente comando en tu entorno virtual:
+### 4.2. Instalación Local (opcional)
 
 ```bash
-pip instala pandas matplotlib folium
-```
+pip install pandas folium
+````
 
-*(Nota: El uso de Folium es un extra para el análisis geográfico, ¡pero no es necesario para la conclusión principal\!)*
+*(El uso de `folium` es opcional para los mapas; no afecta las conclusiones principales.)*
 
------
+---
 
-## 📊 4. Conclusión del análisis
+## 📊 5. Conclusión del Análisis
 
-El análisis concluye que la tienda menos eficiente, en términos de **potencial de crecimiento eficiente y riesgo estructural**, es la **Tienda 4**.
+El análisis integral muestra dos escenarios opuestos:
 
-  * La **Tienda 1**, una presenta problemas de baja calificación ($3.98$) y alto costo de entorno (problemas **operativos**), tiene el mercado validado por su alto ingreso.
-  * Por el contrario, la **Tienda 4** presenta un problema **estructural** (falta de propuesta de valor clara y bajo volumen de ventas), lo cual es más caro y armado de revertir.
+* **Tienda 1:**
+  Presenta la calificación promedio más baja (3.98) y el costo logístico más alto, pero también los **mayores ingresos** del grupo.
+  Sus problemas son **operativos y gestionables**, vinculados al servicio y la logística.
 
-**Recomendación:** Vender la Tienda 4 para invertir en la optimización de los problemas operativos de la Tienda 1, maximizando así el retorno de inversión del Sr. Juan.
+* **Tienda 4:**
+  Registra la **facturación más baja** (≈ 9.8 % inferior a la tienda líder), menor rotación de productos y una estructura de demanda desequilibrada, con alta dependencia en pocas categorías.
+  Estas señales reflejan **debilidad estructural y bajo potencial de crecimiento**.
 
------
+### ✅ **Recomendación Final: Vender la Tienda 4**
 
-## 🤝 5. Contribución y Autor
+**Motivos estratégicos:**
 
-Este proyecto fue desarrollado por **Enrique** (con la ayuda de un co-creador IA GEM que le gusta el humor y los gráficos de dispersión).
+* **Bajo potencial de expansión:** Demanda limitada y productos con bajo movimiento.
+* **Estructura poco rentable:** Requiere inversión significativa para alcanzar niveles promedio.
+* **Mayor retorno en retener la Tienda 1:** Sus debilidades son internas, no de mercado.
 
-Si encontras algún error ¡no dudes en abrir un *emitir* o *pull request*\!
+**Conclusión ejecutiva:**
+Vender la **Tienda 4** libera capital de un activo con **retorno decreciente**, permitiendo reinvertir en la **optimización de la Tienda 1** y consolidar el crecimiento sostenible de **Alura Store**.
+
+---
+
+## 🤝 6. Autoría
+
+Proyecto desarrollado por **Enrique**
+*(con asistencia analítica de IA GEM — obsesionada con la claridad visual y los datos bien contados).*
+
+Si identificas oportunidades de mejora o nuevas perspectivas de análisis, ¡abre un *pull request* o un *issue*! 🚀
